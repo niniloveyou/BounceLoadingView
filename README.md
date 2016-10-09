@@ -11,3 +11,18 @@ Android API 11+， Because of the use of ValueAnimation， if you want use it on
         
        
         
+        loadingView.addBitmap(R.mipmap.v4);
+        
+        or
+        
+        loadingView.addBitmap(bitmap);
+        
+        or
+        
+        loadingView.addBitmaps(mBitmapList);
+        
+        //set the shadow color
+        loadingView.setShadowColor(Color.LTGRAY);
+        
+ 
+        loadingView.start();
