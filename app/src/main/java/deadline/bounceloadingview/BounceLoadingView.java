@@ -30,7 +30,12 @@ public class BounceLoadingView extends View {
 
     private static final int SHADOW_COLOR = Color.LTGRAY;
 
+    //图片每次跳起落下的时长
+    private static final int DEFAULT_DURATION = 800;
+
     private int mShadowColor = SHADOW_COLOR;
+
+    private int mDuration = DEFAULT_DURATION;
 
     //画笔
     private Paint mBitmapPaint;
@@ -107,6 +112,14 @@ public class BounceLoadingView extends View {
        }
     }
 
+    /**
+     * 设置每次跳起落下的时长
+     * @param duration
+     */
+    public void setDuration(int duration) {
+        this.mDuration = duration;
+    }
+
     public void start()
     {
 
@@ -152,7 +165,7 @@ public class BounceLoadingView extends View {
         }
 
 
-        animator.setDuration(800);
+        animator.setDuration(mDuration);
         animator.start();
     }
 

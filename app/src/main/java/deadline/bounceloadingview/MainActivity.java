@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         loadingView.addBitmap(R.mipmap.v8);
         loadingView.addBitmap(R.mipmap.v9);
         loadingView.setShadowColor(Color.LTGRAY);
+        loadingView.setDuration(700);
         loadingView.start();
     }
 }
