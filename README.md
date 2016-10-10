@@ -24,5 +24,7 @@ Android API 11+， Because of the use of ValueAnimation， if you want use it on
         //set the shadow color
         loadingView.setShadowColor(Color.LTGRAY);
         
+        //set the duration of animation
+        loadingView.setDuration(800);
  
         loadingView.start();
